@@ -2,10 +2,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Trefko";
 }
-/* text {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-} */
+@font-face {
+  font-family: "Trefko";
+  src: url(./slike/Roboto-Black.ttf);
+}
 .header {
   text-align: center;
 }
@@ -302,8 +304,9 @@ body {
   margin-bottom: 20px;
 }
 
-.form input {
+.form > input {
   width: 95%;
+  margin-bottom: 15px;
 }
 
 .submit-button {
@@ -327,4 +330,107 @@ body {
 .map {
   width: 100%;
   margin-top: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .background {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 350px;
+    background-color: transparent;
+  }
+  .background > div {
+    width: auto;
+    margin-top: 20px;
+  }
+  .image {
+    margin-top: -100px;
+    width: 100%;
+    height: 500px;
+  }
+  .build {
+    border-color: white;
+    margin-left: 25px;
+  }
+  .estate {
+    color: white;
+  }
+  .CONTEINER {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about {
+    width: 45%;
+  }
+  .conteiner1 {
+    width: 45%;
+  }
+  .sentance {
+    font-size: medium;
+    margin-bottom: 40px;
+  }
+  .sentance1 {
+    font-size: medium;
+  }
+  .sentance2 {
+    font-size: medium;
+  }
+  .sentance3 {
+    font-size: medium;
+  }
+  .sentance4 {
+    font-size: medium;
+  }
+  .sentance5 {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .conteiner2 {
+    margin-bottom: 50px;
+  }
+  .whole-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 25;
+  }
+  .cards {
+    width: 45%;
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input {
+    width: 31.5%;
+    height: 40px;
+    font-size: medium;
+  }
+  .form > div {
+    width: 90.5%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+  .form > textarea {
+    width: 90%;
+    height: 190px;
+    font-size: large;
+    margin-left: 15px;
+  }
+  .form > button {
+    margin-top: 15px;
+    height: 50px;
+    width: 20%;
+    border-radius: 5px;
+    font-size: x-large;
+  }
 }
