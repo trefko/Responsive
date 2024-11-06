@@ -299,14 +299,16 @@ body {
 }
 
 .form {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  width: 90%;
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
 }
 
 .form > input {
   width: 95%;
-  margin-bottom: 15px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
 .submit-button {
@@ -323,7 +325,7 @@ body {
 }
 
 .form textarea {
-  width: 96%;
+  width: 95%;
   height: 100px;
 }
 
@@ -406,10 +408,12 @@ body {
   }
   .form {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
-  input {
+  .form > input {
     width: 31.5%;
+
     height: 40px;
     font-size: medium;
   }
@@ -421,10 +425,9 @@ body {
     margin-left: 15px;
   }
   .form > textarea {
-    width: 90%;
+    width: 100%;
     height: 190px;
     font-size: large;
-    margin-left: 15px;
   }
   .form > button {
     margin-top: 15px;
@@ -433,4 +436,7 @@ body {
     border-radius: 5px;
     font-size: x-large;
   }
+}
+
+@media screen and (min-width: 1200px) {
 }
